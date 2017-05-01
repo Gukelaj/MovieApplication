@@ -3,14 +3,20 @@ public class Movie
     private String name;
     private int year;
     private String director;
-    private String actor;
+    private String actor1;
+    private String actor2;
+    private String actor3;
 
-    public Movie(String name, int year, String director, String actor)
+
+    public Movie(String name, int year, String director, String actor1, String actor2, String actor3)
     {
         this.name = name;
         this.year = year;
         this.director = director;
-        this.actor = actor;
+        this.actor1 = actor1;
+        this.actor2 = actor2;
+        this.actor3 = actor3;
+        
     }
 
     public String getName()
@@ -43,13 +49,38 @@ public class Movie
         this.year = year;
     }
 
-    public String getActor()
+    public String getActor1()
     {
-        return actor;
+        return actor1;
     }
 
-    public void setActor(String actor)
+    public void setActor1(String actor1)
     {
-        this.actor = actor;
+        this.actor1 = actor1;
+    }
+
+    public String getActor2()
+    {
+        return actor2;
+    }
+
+    public void setActor2(String actor2)
+    {
+        this.actor2 = actor2;
+    }
+
+    public String getActor3()
+    {
+        return actor3;
+    }
+
+    public void setActor3(String actor3)
+    {
+        this.actor3 = actor3;
+    }
+
+    public String toString()
+    {
+        return name + " " + year + " " + director + " " + actor1 + " " + actor2 + " " + actor3; 
     }
 }

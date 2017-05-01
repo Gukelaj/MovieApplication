@@ -8,6 +8,41 @@ public class OS
     ArrayList<User> users = new ArrayList<User>();
     File f = new File("User.txt");
     
+    ArrayList<Movie> movies = new ArrayList<Movie>();
+
+ public void search()
+{
+  try {
+    File f1 = new File("Movies.txt");
+    f1.createNewFile();
+
+    Scanner scan = new Scanner(f1);
+
+    while(scan.hasNextLine())
+    {
+       movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next(), scan.next(), scan.next())); 
+    }
+
+    System.out.println("What do you want to search for?");
+    String result = scan.nextLine();
+
+            for(int i = 0; i < movies.size(); i++)
+            {
+                if(movies.get(i).toString().contains(result))
+                {
+                    System.out.println(i + " " + movies.get(i));
+                }               
+            }
+  }
+
+   catch(Exception e) 
+            {
+            
+            }
+}
+
+
+
 
     public void startMenu()
     {       
@@ -118,7 +153,7 @@ public class OS
             // Search for movie
             if(input.equals("1")) 
             {
-                // Search
+                search();
             }
                                 
             // Quit
