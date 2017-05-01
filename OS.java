@@ -14,6 +14,7 @@ public class OS
     {
         try 
         {
+            Scanner input = new Scanner(System.in);
             File f1 = new File("Movies.txt");
             f1.createNewFile();
 
@@ -25,7 +26,7 @@ public class OS
             }
 
             System.out.println("What do you want to search for?");
-            String result = scan.nextLine();
+            String result = input.nextLine();
 
             for(int i = 0; i < movies.size(); i++)
             {
@@ -109,6 +110,10 @@ public class OS
             Scanner input = new Scanner(System.in);
             // File f = new File("User.txt");
             Scanner scan = new Scanner(f);
+            while(scan.hasNextLine())
+            {
+                users.add(new User(scan.next(), scan.next()));   
+            }
             // ArrayList<User> users = new ArrayList<User>();
 
             System.out.println("Enter your Name:");
