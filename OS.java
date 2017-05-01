@@ -10,21 +10,22 @@ public class OS
     
     ArrayList<Movie> movies = new ArrayList<Movie>();
 
- public void search()
-{
-  try {
-    File f1 = new File("Movies.txt");
-    f1.createNewFile();
-
-    Scanner scan = new Scanner(f1);
-
-    while(scan.hasNextLine())
+    public void search()
     {
-       movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next(), scan.next(), scan.next())); 
-    }
+        try 
+        {
+            File f1 = new File("Movies.txt");
+            f1.createNewFile();
 
-    System.out.println("What do you want to search for?");
-    String result = scan.nextLine();
+            Scanner scan = new Scanner(f1);
+
+            while(scan.hasNextLine())
+            {
+                movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next(), scan.next(), scan.next())); 
+            }
+
+            System.out.println("What do you want to search for?");
+            String result = scan.nextLine();
 
             for(int i = 0; i < movies.size(); i++)
             {
@@ -33,16 +34,12 @@ public class OS
                     System.out.println(i + " " + movies.get(i));
                 }               
             }
-  }
-
-   catch(Exception e) 
-            {
+        }
+        catch(Exception e) 
+        {
             
-            }
-}
-
-
-
+        }
+    }
 
     public void startMenu()
     {       
@@ -131,7 +128,8 @@ public class OS
                     file.println();
                 }
             } 
-        } catch(Exception e)
+        } 
+        catch(Exception e)
         {
             System.out.println(e);
         }   
