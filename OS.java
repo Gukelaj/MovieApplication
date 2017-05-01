@@ -7,6 +7,7 @@ public class OS
 {
     ArrayList<User> users = new ArrayList<User>();
     File f = new File("User.txt");
+    File f1 = new File("Movies.txt");
     
     ArrayList<Movie> movies = new ArrayList<Movie>();
 
@@ -15,7 +16,6 @@ public class OS
         try 
         {
             Scanner input = new Scanner(System.in);
-            File f1 = new File("Movies.txt");
             f1.createNewFile();
 
             Scanner scan = new Scanner(f1);
@@ -42,6 +42,64 @@ public class OS
         }
     }
 
+    public void update()
+    {
+        try
+        {
+        
+            Scanner input = new Scanner(System.in);
+            Scanner scan = new Scanner(f1);
+
+           
+            search();
+
+            System.out.println("what number do you want to update? ");
+            int number = input.nextInt();
+
+            
+            System.out.println("1. name ");
+            System.out.println("2. year ");
+            System.out.println("3. director ");
+            System.out.println("4. actor1 ");
+            System.out.println("5. actor2 ");
+            System.out.println("6. actor3 ");
+            String option = System.console().readLine();
+
+            if (option.equals ("1"))
+            {
+            System.out.print("title: ");
+            String title = input.next();
+            movies.get(number).setName(title);
+
+           
+            PrintStream file = new PrintStream(f1);
+            for(int i = 0; i < movies.size(); i++)
+            { 
+                
+                file.print(movies.get(i).getName() + " " + movies.get(i).getYear()
+                 + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                 + " " + movies.get(i).getActor2()
+                 + " " + movies.get(i).getActor3());
+                
+                if(i != movies.size() -1)
+                {
+                    file.println();
+                }
+                
+            }
+
+      
+        }
+     
+}
+ catch(Exception e) 
+        {
+            
+        }
+    }
+
+
+
     public void startMenu()
     {       
         boolean running = true;
@@ -64,7 +122,12 @@ public class OS
             {
                 signUp();
             }
-
+            // SKAL SLETTES 
+            else if(login.equals ("4"))
+            {
+                update();
+            }
+            
             else if(login.equals ("3"))
             {
                 running = false;

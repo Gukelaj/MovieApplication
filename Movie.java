@@ -29,16 +29,6 @@ public class Movie
         this.name = name;
     }
 
-    public String getDirector()
-    {
-        return director;
-    }
-
-    public void setDirector(String director)
-    {
-        this.director = director;
-    }
-
     public int getYear()
     {
         return year;
@@ -47,6 +37,16 @@ public class Movie
     public void setYear(int year)
     {
         this.year = year;
+    }
+
+       public String getDirector()
+    {
+        return director;
+    }
+
+    public void setDirector(String director)
+    {
+        this.director = director;
     }
 
     public String getActor1()
