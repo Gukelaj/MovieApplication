@@ -47,17 +47,20 @@ public class OS
         try
         {
         
-            Scanner input = new Scanner(System.in);
-            Scanner scan = new Scanner(f1);
-
+            Scanner input1 = new Scanner(System.in);
+            Scanner scan1 = new Scanner(f1);
+            while(scan1.hasNextLine())
+            {
+                movies.add(new Movie(scan1.next(), scan1.nextInt(), scan1.next(), scan1.next(), scan1.next(), scan1.next()));   
+            }
            
             search();
-
+            
             System.out.println("what number do you want to update? ");
-            int number = input.nextInt();
+            int number = input1.nextInt();
 
             
-            System.out.println("1. name ");
+            System.out.println("1. title ");
             System.out.println("2. year ");
             System.out.println("3. director ");
             System.out.println("4. actor1 ");
@@ -68,22 +71,22 @@ public class OS
             if (option.equals ("1"))
             {
                 System.out.print("title: ");
-                String title = input.next();
+                String title = input1.next();
                 movies.get(number).setName(title);
 
             
-                PrintStream file = new PrintStream(f1);
+                PrintStream file1 = new PrintStream(f1);
                 for(int i = 0; i < movies.size(); i++)
                 { 
                     
-                    file.print(movies.get(i).getName() + " " + movies.get(i).getYear()
+                    file1.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
                     + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
                     + " " + movies.get(i).getActor2()
                     + " " + movies.get(i).getActor3());
                     
                     if(i != movies.size() -1)
                     {
-                        file.println();
+                        file1.println();
                     }
                     
                 }
@@ -275,7 +278,7 @@ public class OS
 
            for(int i = 0; i < movies.size(); i++)
            {
-                file.print(movies.get(i).getName()+ " " + movies.get(i).getYear() + " " + movies.get(i).getDirector() 
+                file.print(movies.get(i).getTitle()+ " " + movies.get(i).getYear() + " " + movies.get(i).getDirector() 
                 + " " +  movies.get(i).getActor1() + " " + movies.get(i).getActor2() + " " + movies.get(i).getActor3());
 
                if (i !=movies.size()-1)

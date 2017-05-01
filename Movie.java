@@ -1,6 +1,6 @@
 public class Movie
 {
-    private String name;
+    private String title;
     private int year;
     private String director;
     private String actor1;
@@ -8,9 +8,9 @@ public class Movie
     private String actor3;
 
 
-    public Movie(String name, int year, String director, String actor1, String actor2, String actor3)
+    public Movie(String title, int year, String director, String actor1, String actor2, String actor3)
     {
-        this.name = name;
+        this.title = title;
         this.year = year;
         this.director = director;
         this.actor1 = actor1;
@@ -19,14 +19,14 @@ public class Movie
         
     }
 
-    public String getName()
+    public String getTitle()
     {
-        return name;
+        return title;
     }
 
-    public void setName(String name)
+    public void setTitle(String title)
     {
-        this.name = name;
+        this.title = title;
     }
 
     public int getYear()
@@ -81,6 +81,6 @@ public class Movie
 
     public String toString()
     {
-        return name + " " + year + " " + director + " " + actor1 + " " + actor2 + " " + actor3; 
+        return title + " " + year + " " + director + " " + actor1 + " " + actor2 + " " + actor3; 
     }
 }
