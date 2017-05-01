@@ -116,7 +116,7 @@ public class OS
             }
             // ArrayList<User> users = new ArrayList<User>();
 
-            System.out.println("Enter your Name:");
+            System.out.println("Enter your Name :");
             String name = System.console().readLine();
             System.out.println("Enter your Password:");
             String password = System.console().readLine();
