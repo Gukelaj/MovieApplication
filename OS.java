@@ -67,38 +67,35 @@ public class OS
 
             if (option.equals ("1"))
             {
-            System.out.print("title: ");
-            String title = input.next();
-            movies.get(number).setName(title);
+                System.out.print("title: ");
+                String title = input.next();
+                movies.get(number).setName(title);
 
-           
-            PrintStream file = new PrintStream(f1);
-            for(int i = 0; i < movies.size(); i++)
-            { 
-                
-                file.print(movies.get(i).getName() + " " + movies.get(i).getYear()
-                 + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
-                 + " " + movies.get(i).getActor2()
-                 + " " + movies.get(i).getActor3());
-                
-                if(i != movies.size() -1)
-                {
-                    file.println();
+            
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i++)
+                { 
+                    
+                    file.print(movies.get(i).getName() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                    
                 }
-                
-            }
 
-      
-        }
+            }
      
-}
- catch(Exception e) 
+        }
+        catch(Exception e) 
         {
             
         }
     }
-
-
 
     public void startMenu()
     {       
@@ -128,12 +125,18 @@ public class OS
                 update();
             }
             
+            else if(login.equals ("5"))
+            {
+                createMovie();
+            }
+            
             else if(login.equals ("3"))
             {
                 running = false;
             }
         }
     }
+    
     public void login()
     {
         System.out.println("Enter Username:");
@@ -237,4 +240,57 @@ public class OS
             }                      
         }
     }
+    public void createMovie()
+   {
+       try {
+       Scanner input = new Scanner(System.in);
+       Scanner scan = new Scanner(f1);
+       
+       while(scan.hasNextLine())
+       {
+           movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next()
+           , scan.next(),scan.next()));
+       }
+           System.out.println("Enter Movie Title");
+           String name = System.console().readLine();
+
+           System.out.println("Enter movie Year");
+           String year = System.console().readLine();
+           int year1 = Integer.parseInt(year);
+
+           System.out.println("Enter director");
+           String director = System.console().readLine();
+
+           System.out.println("Enter first actor");
+           String actor1 = System.console().readLine();
+
+           System.out.println("Enter second actor");
+           String actor2 = System.console().readLine();
+
+           System.out.println("Enter third actor");
+           String actor3 = System.console().readLine();
+
+           PrintStream file = new PrintStream(f1);
+           movies.add(new Movie(name, year1, director, actor1, actor2, actor3));
+
+           for(int i = 0; i < movies.size(); i++)
+           {
+                file.print(movies.get(i).getName()+ " " + movies.get(i).getYear() + " " + movies.get(i).getDirector() 
+                + " " +  movies.get(i).getActor1() + " " + movies.get(i).getActor2() + " " + movies.get(i).getActor3());
+
+               if (i !=movies.size()-1)
+               {
+                   file.println();   
+               }
+           }
+
+       
+
+           }
+           catch (Exception e)
+           {
+                   System.out.println(e);
+           }
+}
+
 }
