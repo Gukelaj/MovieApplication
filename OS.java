@@ -251,6 +251,10 @@ public class OS
             {
                 search();
             }
+             else if(login.equals ("7"))
+            {
+                play();
+            }
         }
     }
     
@@ -417,6 +421,38 @@ public class OS
             }                      
         }
     }
+
+    
+    public void play()
+    {
+        try
+        {
+            ArrayList<Movie> movies = new ArrayList<Movie>();
+            Scanner input = new Scanner(System.in);
+
+            Scanner scan = new Scanner(f1);
+            search();
+
+            while(scan.hasNextLine())
+            {
+                movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next(), scan.next(), scan.next())); 
+            }
+
+            System.out.println("choose a movie ");
+            int number = input.nextInt();
+
+            PrintStream file = new PrintStream(f1);
+            for(int i = 0; i < movies.size(); i++)
+            { 
+                System.out.println(movies.get(number).toString());
+            }
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
+
     public void createMovie()
     {
        try 
