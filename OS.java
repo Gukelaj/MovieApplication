@@ -5,7 +5,7 @@ import java.io.*;
 
 public class OS
 {
-    
+    Admin admin = new Admin("admin", "1234");
     ArrayList<User> users = new ArrayList<User>();
     File f = new File("User.txt");
     File f1 = new File("Movies.txt");
@@ -153,7 +153,7 @@ public class OS
     
     public void login()
     {
-        System.out.println("Enter Usertitle:");
+        System.out.println("Enter Username:");
         String user = System.console().readLine();
         System.out.println("==========");
 
@@ -196,7 +196,7 @@ public class OS
             }
             // ArrayList<User> users = new ArrayList<User>();
 
-            System.out.println("Enter your title :");
+            System.out.println("Enter your Username:");
             String title = System.console().readLine();
             System.out.println("Enter your Password:");
             String password = System.console().readLine();
