@@ -34,7 +34,7 @@ public class OS
             {
                 if(movies.get(i).toString().contains(result))
                 {
-                    System.out.println(i + " " + movies.get(i));
+                    System.out.println(i + " " + movies.get(i).getTitle());
                 }               
             }
         }
@@ -96,9 +96,112 @@ public class OS
                     }
                     
                 }
-
             }
-     
+
+            else if(option.equals("2"))
+            {
+                System.out.println("Year");
+                int year = input.nextInt();
+                movies.get(number).setYear(year);
+
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i++)
+                {
+                    file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                }
+            }
+
+            else if(option.equals("3"))
+            {
+                System.out.println("Director");
+                String director = input.next();
+                movies.get(number).setDirector(director);
+
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i++)
+                {
+                    file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                }
+            }
+
+            else if(option.equals("4"))
+            {
+                System.out.println("Actor 1");
+                String actor1 = input.next();
+                movies.get(number).setActor1(actor1);
+
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i++)
+                {
+                    file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                }
+            }
+
+            else if (option.equals("5"))
+            {
+                System.out.println("Actor 2");
+                String actor2 = input.next();
+                movies.get(number).setActor2(actor2);
+
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i ++)
+                {
+                    file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                }
+            }
+            
+            else if (option.equals("6"))
+            {
+                System.out.println("Actor 3");
+                String actor3 = input.next();
+                movies.get(number).setActor3(actor3);
+
+                PrintStream file = new PrintStream(f1);
+                for(int i = 0; i < movies.size(); i++)
+                {
+                     file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
+                    + " " + movies.get(i).getActor2()
+                    + " " + movies.get(i).getActor3());
+                    
+                    if(i != movies.size() -1)
+                    {
+                        file.println();
+                    }
+                }
+            }    
         }
         catch(Exception e) 
         {
@@ -153,6 +256,19 @@ public class OS
     
     public void login()
     {
+        try
+        {
+            Scanner input = new Scanner(System.in);
+            Scanner scan = new Scanner(f);
+            while(scan.hasNextLine())
+            {
+                users.add(new User(scan.next(), scan.next()));   
+            }
+        } 
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }  
         System.out.println("Enter Username:");
         String user = System.console().readLine();
         System.out.println("==========");
@@ -228,8 +344,9 @@ public class OS
         {
             System.out.println("What would you like to do?");
             System.out.println("1. Search for movies");
-            System.out.println("2. Quit");
-            System.out.println("Press (1/2/3/4)");
+            System.out.println("2. Play movie");
+            System.out.println("3. Quit");
+            System.out.println("Press (1/2/3)");
 
             String input = System.console().readLine();
                         
@@ -238,9 +355,55 @@ public class OS
             {
                 search();
             }
+            
+            else if(input.equals("2")) 
+            {
+                // Play movie
+            }
                                 
             // Quit
+            else if(input.equals("3")) 
+            {
+                System.out.println("Thanks for using Movie DB"); 
+                System.out.println("==========");
+                menu = false;
+            }
+                                
+            // Error option
+            else
+            {
+                System.out.println("Invalid option");                
+            }                      
+        }
+    }
+    
+    public void runAdminMenu(Admin admin)
+    {
+        boolean menu = true;
+
+        while(menu)
+        {
+            System.out.println("What would you like to do?");
+            System.out.println("1. Create movie");
+            System.out.println("2. Update movie");
+            System.out.println("3. Quit");
+            System.out.println("Press (1/2/3)");
+
+            String input = System.console().readLine();
+                        
+            // Create movie
+            if(input.equals("1")) 
+            {
+                createMovie();
+            }
+            
             else if(input.equals("2")) 
+            {
+                update();
+            }
+                                
+            // Quit
+            else if(input.equals("3")) 
             {
                 System.out.println("Thanks for using Movie DB"); 
                 System.out.println("==========");
@@ -255,7 +418,7 @@ public class OS
         }
     }
     public void createMovie()
-   {
+    {
        try 
         {
             ArrayList<Movie> movies = new ArrayList<Movie>();
