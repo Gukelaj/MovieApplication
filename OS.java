@@ -282,7 +282,24 @@ public class OS
         // Enter title
         for(int i = 0; i < users.size(); i++)
         {
-            if(user.equals (users.get(i).getName()))
+            if(user.equals (admin.getName()))
+            {
+                for(int x = 0; x < 3; x++) 
+                {
+                    System.out.println("Enter Password:");
+                    String password = System.console().readLine();
+                    System.out.println("==========");
+
+                    if(password.equals (admin.getPassword()))
+                    {
+                        runAdminMenu();
+                        break;
+                    } 
+                }
+                break;
+            }
+
+            else if(user.equals (users.get(i).getName()))
             {
                         
                 // Enter password
@@ -362,7 +379,7 @@ public class OS
             
             else if(input.equals("2")) 
             {
-                // Play movie
+                play();
             }
                                 
             // Quit
@@ -381,7 +398,7 @@ public class OS
         }
     }
     
-    public void runAdminMenu(Admin admin)
+    public void runAdminMenu()
     {
         boolean menu = true;
 
@@ -441,10 +458,19 @@ public class OS
             System.out.println("choose a movie ");
             int number = input.nextInt();
 
-            PrintStream file = new PrintStream(f1);
+            // PrintStream file = new PrintStream(f1);
             for(int i = 0; i < movies.size(); i++)
             { 
-                System.out.println(movies.get(number).toString());
+                System.out.println("##########");
+                System.out.println("Title: " + movies.get(number).getTitle());
+                System.out.println("Year: " + movies.get(number).getYear());
+                System.out.println("Director: " + movies.get(number).getDirector());
+                System.out.println("Actors: ");
+                System.out.println(movies.get(number).getActor1());
+                System.out.println(movies.get(number).getActor2());
+                System.out.println(movies.get(number).getActor3());
+                System.out.println("##########");
+               
             }
         }
         catch(Exception e)
