@@ -5,18 +5,20 @@ import java.io.*;
 
 public class OS
 {
+    
     ArrayList<User> users = new ArrayList<User>();
     File f = new File("User.txt");
     File f1 = new File("Movies.txt");
     
-    ArrayList<Movie> movies = new ArrayList<Movie>();
+    
 
     public void search()
     {
         try 
         {
+            
+            ArrayList<Movie> movies = new ArrayList<Movie>();
             Scanner input = new Scanner(System.in);
-            f1.createNewFile();
 
             Scanner scan = new Scanner(f1);
 
@@ -47,17 +49,21 @@ public class OS
         try
         {
         
-            Scanner input1 = new Scanner(System.in);
-            Scanner scan1 = new Scanner(f1);
-            while(scan1.hasNextLine())
-            {
-                movies.add(new Movie(scan1.next(), scan1.nextInt(), scan1.next(), scan1.next(), scan1.next(), scan1.next()));   
-            }
+            ArrayList<Movie> movies = new ArrayList<Movie>();    
+        
+            Scanner input = new Scanner(System.in);
+            Scanner scan = new Scanner(f1);
+
            
             search();
-            
+
+             while(scan.hasNextLine())
+            {
+                movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next(), scan.next(), scan.next())); 
+            }
+
             System.out.println("what number do you want to update? ");
-            int number = input1.nextInt();
+            int number = input.nextInt();
 
             
             System.out.println("1. title ");
@@ -71,22 +77,22 @@ public class OS
             if (option.equals ("1"))
             {
                 System.out.print("title: ");
-                String title = input1.next();
-                movies.get(number).setName(title);
+                String title = input.next();
+                movies.get(number).setTitle(title);
 
             
-                PrintStream file1 = new PrintStream(f1);
+                PrintStream file = new PrintStream(f1);
                 for(int i = 0; i < movies.size(); i++)
                 { 
                     
-                    file1.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
+                    file.print(movies.get(i).getTitle() + " " + movies.get(i).getYear()
                     + " " + movies.get(i).getDirector() + " " + movies.get(i).getActor1()
                     + " " + movies.get(i).getActor2()
                     + " " + movies.get(i).getActor3());
                     
                     if(i != movies.size() -1)
                     {
-                        file1.println();
+                        file.println();
                     }
                     
                 }
@@ -137,18 +143,23 @@ public class OS
             {
                 running = false;
             }
+
+            else if(login.equals ("6"))
+            {
+                search();
+            }
         }
     }
     
     public void login()
     {
-        System.out.println("Enter Username:");
+        System.out.println("Enter Usertitle:");
         String user = System.console().readLine();
         System.out.println("==========");
 
 
         
-        // Enter Name
+        // Enter title
         for(int i = 0; i < users.size(); i++)
         {
             if(user.equals (users.get(i).getName()))
@@ -185,13 +196,13 @@ public class OS
             }
             // ArrayList<User> users = new ArrayList<User>();
 
-            System.out.println("Enter your Name :");
-            String name = System.console().readLine();
+            System.out.println("Enter your title :");
+            String title = System.console().readLine();
             System.out.println("Enter your Password:");
             String password = System.console().readLine();
 
             PrintStream file = new PrintStream(f);
-            users.add(new User(name, password));
+            users.add(new User(title, password));
                     
             for(int i = 0; i < users.size(); i++)
             {
@@ -245,55 +256,53 @@ public class OS
     }
     public void createMovie()
    {
-       try {
-       Scanner input = new Scanner(System.in);
-       Scanner scan = new Scanner(f1);
+       try 
+        {
+            ArrayList<Movie> movies = new ArrayList<Movie>();
+            Scanner input = new Scanner(System.in);
+            Scanner scan = new Scanner(f1);
        
-       while(scan.hasNextLine())
-       {
-           movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next()
-           , scan.next(),scan.next()));
-       }
-           System.out.println("Enter Movie Title");
-           String name = System.console().readLine();
+            while(scan.hasNextLine())
+            {
+                movies.add(new Movie(scan.next(), scan.nextInt(), scan.next(), scan.next()
+                , scan.next(),scan.next()));
+            }
+            System.out.println("Enter Movie Title");
+            String title = System.console().readLine();
 
-           System.out.println("Enter movie Year");
-           String year = System.console().readLine();
-           int year1 = Integer.parseInt(year);
+            System.out.println("Enter movie Year");
+            String year = System.console().readLine();
+            int year1 = Integer.parseInt(year);
 
-           System.out.println("Enter director");
-           String director = System.console().readLine();
+            System.out.println("Enter director");
+            String director = System.console().readLine();
 
-           System.out.println("Enter first actor");
-           String actor1 = System.console().readLine();
+            System.out.println("Enter first actor");
+            String actor1 = System.console().readLine();
 
-           System.out.println("Enter second actor");
-           String actor2 = System.console().readLine();
+            System.out.println("Enter second actor");
+            String actor2 = System.console().readLine();
 
-           System.out.println("Enter third actor");
-           String actor3 = System.console().readLine();
+            System.out.println("Enter third actor");
+            String actor3 = System.console().readLine();
 
-           PrintStream file = new PrintStream(f1);
-           movies.add(new Movie(name, year1, director, actor1, actor2, actor3));
+            PrintStream file = new PrintStream(f1);
+            movies.add(new Movie(title, year1, director, actor1, actor2, actor3));
 
-           for(int i = 0; i < movies.size(); i++)
-           {
+            for(int i = 0; i < movies.size(); i++)
+            {
                 file.print(movies.get(i).getTitle()+ " " + movies.get(i).getYear() + " " + movies.get(i).getDirector() 
                 + " " +  movies.get(i).getActor1() + " " + movies.get(i).getActor2() + " " + movies.get(i).getActor3());
 
-               if (i !=movies.size()-1)
-               {
-                   file.println();   
-               }
-           }
-
-       
-
-           }
-           catch (Exception e)
-           {
-                   System.out.println(e);
-           }
-}
-
+                if (i !=movies.size()-1)
+                {
+                    file.println();   
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
 }
