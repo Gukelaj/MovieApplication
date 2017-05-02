@@ -1,1 +1,6 @@
-Interstellar 2014 Christopher_Nolan Matthew_McConaughey/Cooper Anne_Hathaway/Brand 	Michael_Caine/Professor_Brand
+Interstellar 2014 Christopher_Nolan Matthew_McConaughey/Cooper Anne_Hathaway/Brand Michael_Caine/Professor_Brand
+Guardians_of_the_Galaxy 2014 James_Gunn Chris_Pratt/Peter_Quill Zoe_Saldana/Gamora Bradley_Cooper/Rocket
+Batman_Begins 2005 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Alfred Liam_Neeson/Ducard
+The_Dark_Knight 2008 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Alfred Heath_Ledger/Joker
+The_Dark_Knight_Rises 2012 Christopher_Nolan Christian_Bale/Bruce_Wayne Tom_Hardy/Bane Anne_Hathaway/Selina
+Inception 2010 Christopher_Nolan Leonardo_DeCaprio/Cobb Joseph_Gordon-Levitt/Arthur Ellen_Page/Ariadne
