@@ -14,3 +14,8 @@ Suicide_Squad 2016 Zack_Snyder Will_Smith/Deadshot Margot_Robbie/Harley_Quinn Ja
 X-Men:_Apocalypse 2003 Bryan_Singer James_McAvoy/Professor_Charles_Xavier Michael_Fassbender/Erik_Lehnsherr_Magneto Jennifer_Lawrence/Raven_Mystique
 The_Wolverine 2013 Gavin_Hood Hugh_Jackman/Logan Tao_Okamoto/Mariko Rila_Fukushima/Yukio
 Pacific_Rim 2013 Neill_Blomkamp Charlie_Hunnam/Raleigh_Becket Diego_Klattenhoff/Yancy_Becket Idris_Elba/Stacker_Pentecost
+The_Shawshank_Redemption 1994 Frank_Darabont Tim_Robbins/Andy_Dufresne Morgan_Freeman/Ellis_Boyd_Redding Bob_Gunton/Warden_Norton
+Fight_Club 1999 David_Fincher Edward_Norton/The_Narrator Brad_Pitt/Tyler_Durden Helena_Bonham_Carter/Marla_Singer
+Seven 1995 David_Fincher Morgan_Freeman/Somerset Brad_Pitt/Mills Kevin_Spacey/John_Doe
+The_Usual_Suspects 1995 Bryan_Singer Kevin_Spacey/Verbal Stephen_Baldwin/McManus Gabriel_Byrne/Keaton
+The_Departed 2006 Martin_Scorsese Leonardo_DeCaprio/Billy Matt_Damon/Colin_Sullivan Jack_Nicholson/Frank_Costello
