@@ -1,21 +1,22 @@
-Interstellar 2014 Christopher_Nolan Matthew_McConaughey/Cooper Anne_Hathaway/Brand Michael_Caine/Professor_Brand
-Guardians_of_the_Galaxy 2014 James_Gunn Chris_Pratt/Peter_Quill Zoe_Saldana/Gamora Bradley_Cooper/Rocket
-Batman_Begins 2005 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Alfred Liam_Neeson/Ducard
-The_Dark_Knight 2008 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Alfred Heath_Ledger/Joker
-The_Dark_Knight_Rises 2012 Christopher_Nolan Christian_Bale/Bruce_Wayne Tom_Hardy/Bane Anne_Hathaway/Selina
-Inception 2010 Christopher_Nolan Leonardo_DeCaprio/Cobb Joseph_Gordon-Levitt/Arthur Ellen_Page/Ariadne
-10_things_i_hate_about_you 1999 Gil_Junger Heath_Ledger/Patrick_Verona Julia_Stiles/Katarina_Stratford Joseph_Gordon-Levitt/Cameron_James
-Mean_Girls 2004 Mark_Waters Lindsay_Lohan/Cady_Heron Rachel_McAdams/Regina_George Tina_Fey/Ms_Norbury
-Pitch_Perfect 2012 Jason_Moore Anna_Kendrick/Beca Skylar_Astin/Jesse Ben_Platt/Benji
-Pitch_Perfect_2 2015 Elixabeth_Banks Anna_Kendrick/Beca Rebel_Wilson/Fat_Amy Hailee_Steinfeld/Emily
-Clueless 1995 Amy_Heckerling Alicia_Silverstone/Cher Stacey_Dash/Dionne Brittany_Murphy/Tai
-Deadpool 2016 Anthony_Russo Ryan_Reynolds/Wade_Deadpool Karan_Soni/Dopinder Ed_Skrein/Ajax
-Suicide_Squad 2016 Zack_Snyder Will_Smith/Deadshot Margot_Robbie/Harley_Quinn Jaime_FitzSimons/Sergeant_Ames_Bravo_14
-X-Men:_Apocalypse 2003 Bryan_Singer James_McAvoy/Professor_Charles_Xavier Michael_Fassbender/Erik_Lehnsherr_Magneto Jennifer_Lawrence/Raven_Mystique
-The_Wolverine 2013 Gavin_Hood Hugh_Jackman/Logan Tao_Okamoto/Mariko Rila_Fukushima/Yukio
-Pacific_Rim 2013 Neill_Blomkamp Charlie_Hunnam/Raleigh_Becket Diego_Klattenhoff/Yancy_Becket Idris_Elba/Stacker_Pentecost
-The_Shawshank_Redemption 1994 Frank_Darabont Tim_Robbins/Andy_Dufresne Morgan_Freeman/Ellis_Boyd_Redding Bob_Gunton/Warden_Norton
-Fight_Club 1999 David_Fincher Edward_Norton/The_Narrator Brad_Pitt/Tyler_Durden Helena_Bonham_Carter/Marla_Singer
-Seven 1995 David_Fincher Morgan_Freeman/Somerset Brad_Pitt/Mills Kevin_Spacey/John_Doe
-The_Usual_Suspects 1995 Bryan_Singer Kevin_Spacey/Verbal Stephen_Baldwin/McManus Gabriel_Byrne/Keaton
-The_Departed 2006 Martin_Scorsese Leonardo_DeCaprio/Billy Matt_Damon/Colin_Sullivan Jack_Nicholson/Frank_Costello
+, Interstellar , 2014 , Christopher Nolan , Matthew McConaughey = Cooper , Anne Hathaway = Brand , Michael Caine = Professor Brand
+, Guardians of the Galaxy , 2014 , James Gunn , Chris Pratt = Peter Quill , Zoe Saldana = Gamora , Bradley Cooper = Rocket
+, Batman Begins , 2005 , Christopher Nolan , Christian Bale = Bruce Wayne , Michael Caine = Alfred , Liam Neeson = Ducard
+, The Dark Knight , 2008 , Christopher Nolan , Christian Bale = Bruce Wayne , Michael Caine = Alfred , Heath Ledger = Joker
+, The Dark Knight Rises , 2012 , Christopher Nolan , Christian Bale = Bruce Wayne , Tom Hardy = Bane , Anne Hathaway = Selina
+, Inception , 2010 , Christopher Nolan , Leonardo DeCaprio = Cobb , Joseph Gordon-Levitt = Arthur , Ellen Page = Ariadne
+, 10 things i hate about you , 1999 , Gil Junger , Heath Ledger = Patrick Verona , Julia Stiles = Katarina Stratford , Joseph Gordon-Levitt = Cameron James
+, Mean Girls , 2004 , Mark Waters , Lindsay Lohan = Cady Heron , Rachel McAdams = Regina George , Tina Fey = Ms Norbury
+, Pitch Perfect , 2012 , Jason Moore , Anna Kendrick = Beca , Skylar Astin = Jesse , Ben Platt = Benji
+, Pitch Perfect 2 , 2015 , Elixabeth Banks , Anna Kendrick = Beca , Rebel Wilson = Fat Amy , Hailee Steinfeld = Emily
+, Clueless , 1995 , Amy Heckerling , Alicia Silverstone = Cher , Stacey Dash = Dionne , Brittany Murphy = Tai
+, Deadpool , 2016 , Anthony Russo , Ryan Reynolds = Wade Deadpool , Karan Soni = Dopinder , Ed Skrein = Ajax
+, Suicide Squad , 2016 , Zack Snyder , Will Smith = Deadshot , Margot Robbie = Harley Quinn , Jaime FitzSimons = Sergeant Ames Bravo 14
+, X-Men: Apocalypse , 2003 , Bryan Singer , James McAvoy = Professor Charles Xavier , Michael Fassbender = Erik Lehnsherr Magneto , Jennifer Lawrence = Raven Mystique
+, The Wolverine , 2013 , Gavin Hood , Hugh Jackman = Logan , Tao Okamoto = Mariko , Rila Fukushima = Yukio
+, Pacific Rim , 2013 , Neill Blomkamp , Charlie Hunnam = Raleigh Becket , Diego Klattenhoff = Yancy Becket , Idris Elba = Stacker Pentecost
+, The Shawshank Redemption , 1994 , Frank Darabont , Tim Robbins = Andy Dufresne , Morgan Freeman = Ellis Boyd Redding , Bob Gunton = Warden Norton
+, Fight Club , 1999 , David Fincher , Edward Norton = The Narrator , Brad Pitt = Tyler Durden , Helena Bonham Carter = Marla Singer
+, Seven , 1995 , David Fincher , Morgan Freeman = Somerset , Brad Pitt = Mills , Kevin Spacey = John Doe
+, The Usual Suspects , 1995 , Bryan Singer , Kevin Spacey = Verbal , Stephen Baldwin = McManus , Gabriel Byrne = Keaton
+, The Departed , 2006 , Martin Scorsese , Leonardo DeCaprio = Billy , Matt Damon = Colin Sullivan , Jack Nicholson = Frank Costello
+, Man of Steel , 2013 , Zack Snyder , Henry Cavill = Clark Kent / Kal-El , Amy Adams = Lois Lane , Michael Shannon = General Zod
