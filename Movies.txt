@@ -4,3 +4,8 @@ Batman_Begins 2005 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Al
 The_Dark_Knight 2008 Christopher_Nolan Christian_Bale/Bruce_Wayne Michael_Caine/Alfred Heath_Ledger/Joker
 The_Dark_Knight_Rises 2012 Christopher_Nolan Christian_Bale/Bruce_Wayne Tom_Hardy/Bane Anne_Hathaway/Selina
 Inception 2010 Christopher_Nolan Leonardo_DeCaprio/Cobb Joseph_Gordon-Levitt/Arthur Ellen_Page/Ariadne
+10_things_i_hate_about_you 1999 Gil_Junger Heath_Ledger/Patrick_Verona Julia_Stiles/Katarina_Stratford Joseph_Gordon-Levitt/Cameron_James
+Mean_Girls 2004 Mark_Waters Lindsay_Lohan/Cady_Heron Rachel_McAdams/Regina_George Tina_Fey/Ms_Norbury
+Pitch_Perfect 2012 Jason_Moore Anna_Kendrick/Beca Skylar_Astin/Jesse Ben_Platt/Benji
+Pitch_Perfect_2 2015 Elixabeth_Banks Anna_Kendrick/Beca Rebel_Wilson/Fat_Amy Hailee_Steinfeld/Emily
+Clueless 1995 Amy_Heckerling Alicia_Silverstone/Cher Stacey_Dash/Dionne Brittany_Murphy/Tai
