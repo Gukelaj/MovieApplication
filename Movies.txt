@@ -9,3 +9,8 @@ Mean_Girls 2004 Mark_Waters Lindsay_Lohan/Cady_Heron Rachel_McAdams/Regina_Georg
 Pitch_Perfect 2012 Jason_Moore Anna_Kendrick/Beca Skylar_Astin/Jesse Ben_Platt/Benji
 Pitch_Perfect_2 2015 Elixabeth_Banks Anna_Kendrick/Beca Rebel_Wilson/Fat_Amy Hailee_Steinfeld/Emily
 Clueless 1995 Amy_Heckerling Alicia_Silverstone/Cher Stacey_Dash/Dionne Brittany_Murphy/Tai
+Deadpool 2016 Anthony_Russo Ryan_Reynolds/Wade_Deadpool Karan_Soni/Dopinder Ed_Skrein/Ajax
+Suicide_Squad 2016 Zack_Snyder Will_Smith/Deadshot Margot_Robbie/Harley_Quinn Jaime_FitzSimons/Sergeant_Ames_Bravo_14
+X-Men:_Apocalypse 2003 Bryan_Singer James_McAvoy/Professor_Charles_Xavier Michael_Fassbender/Erik_Lehnsherr_Magneto Jennifer_Lawrence/Raven_Mystique
+The_Wolverine 2013 Gavin_Hood Hugh_Jackman/Logan Tao_Okamoto/Mariko Rila_Fukushima/Yukio
+Pacific_Rim 2013 Neill_Blomkamp Charlie_Hunnam/Raleigh_Becket Diego_Klattenhoff/Yancy_Becket Idris_Elba/Stacker_Pentecost
