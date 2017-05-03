@@ -290,7 +290,7 @@ public class OS
             }
              else if(login.equals ("7"))
             {
-                play();
+                // play();
             }
         }
     }
@@ -303,7 +303,7 @@ public class OS
             Scanner scan = new Scanner(f);
             while(scan.hasNextLine())
             {
-                users.add(new User(scan.next(), scan.next()));   
+                users.add(new User(scan.next(), scan.next(), scan.nextInt()));   
             }
         } 
         catch(Exception e)
@@ -363,7 +363,7 @@ public class OS
             Scanner scan = new Scanner(f);
             while(scan.hasNextLine())
             {
-                users.add(new User(scan.next(), scan.next()));   
+                users.add(new User(scan.next(), scan.next(), scan.nextInt()));   
             }
             // ArrayList<User> users = new ArrayList<User>();
 
@@ -374,11 +374,11 @@ public class OS
             System.out.println("============================== ");
 
             PrintStream file = new PrintStream(f);
-            users.add(new User(title, password));
+            users.add(new User(title, password, 0));
                     
             for(int i = 0; i < users.size(); i++)
             {
-                file.print(users.get(i).getName() + " " + users.get(i).getPassword());
+                file.print(users.get(i).getName() + " " + users.get(i).getPassword() + " " + users.get(i).getNumberOfMovies());
                         
                 if(i != users.size() -1)
                 {
@@ -415,6 +415,27 @@ public class OS
             else if(input.equals("2")) 
             {
                 play();
+                user.setNumberOfMovies();
+                user.printNumberOfMovies();
+                try
+                {
+                    PrintStream file1 = new PrintStream(f);
+                    
+                    for(int i = 0; i < users.size(); i++)
+                    {
+                        file1.print(users.get(i).getName() + " " + users.get(i).getPassword()
+                        + " " + users.get(i).getNumberOfMovies());
+                        
+                        if(i != users.size() -1)
+                        {
+                            file1.println();
+                        }
+                    } 
+                }
+                catch(Exception e)
+                {
+
+                }
             }
                                 
             // Quit
