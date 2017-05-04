@@ -415,10 +415,11 @@ public class OS
             else if(input.equals("2")) 
             {
                 play();
-                user.setNumberOfMovies();
-                user.printNumberOfMovies();
+                
                 try
                 {
+                    user.setNumberOfMovies();
+                    user.printNumberOfMovies();
                     PrintStream file1 = new PrintStream(f);
                     
                     for(int i = 0; i < users.size(); i++)

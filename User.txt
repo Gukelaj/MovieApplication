@@ -1,4 +1,4 @@
-Nikolaj 9876 1
-Silas 5555 0
+Nikolaj 9876 7
+Silas 5555 2
 Ronny 666 0
 Joachim 4444 0
