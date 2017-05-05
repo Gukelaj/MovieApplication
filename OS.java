@@ -402,6 +402,7 @@ public class OS
             System.out.println("1. Search for movies");
             System.out.println("2. Play movie");
             System.out.println("3. Quit");
+            System.out.println("You have seen " + user.getNumberOfMovies() + " movie(s) so far");
             System.out.print("Press (1/2/3): ");
             String input = System.console().readLine();
             System.out.println("============================== ");
@@ -419,7 +420,6 @@ public class OS
                 try
                 {
                     user.setNumberOfMovies();
-                    user.printNumberOfMovies();
                     PrintStream file1 = new PrintStream(f);
                     
                     for(int i = 0; i < users.size(); i++)
